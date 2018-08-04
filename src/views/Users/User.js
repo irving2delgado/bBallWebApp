@@ -4,7 +4,7 @@ import { Card, CardBody, CardHeader, Col, Row, Table } from 'reactstrap';
 import usersData from './UsersData'
 
 class User extends Component {
-
+  
   render() {
 
     const user = usersData.find( user => user.id.toString() === this.props.match.params.id)

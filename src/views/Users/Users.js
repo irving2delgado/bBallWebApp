@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Badge, Card, CardBody, CardHeader, Col, Row, Table } from 'reactstrap';
 import axios from 'axios';
+import User from './User'
 import {
   Button,
   ButtonDropdown,
@@ -95,7 +96,12 @@ class Users extends Component {
                     )}
                   </tbody>
                 </Table>
-                <Table hover responsive className="table-outline mb-0 d-none d-sm-table">
+                
+              </CardBody>
+            </Card>
+          </Col>
+          <Col xl={6}>
+          <Table hover responsive className="table-outline mb-0 d-none d-sm-table">
                   <thead className="thead-light">
                   <tr>
                     <th className="text-center"><i className="icon-people"></i></th>
@@ -320,8 +326,6 @@ class Users extends Component {
                   </tr>
                   </tbody>
                 </Table>
-              </CardBody>
-            </Card>
           </Col>
         </Row>
       </div>
