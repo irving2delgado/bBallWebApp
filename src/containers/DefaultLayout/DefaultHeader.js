@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Badge, DropdownItem, DropdownMenu, DropdownToggle, Nav, NavItem, NavLink } from 'reactstrap';
 import PropTypes from 'prop-types';
-
+import axios from 'axios';
 import { AppAsideToggler, AppHeaderDropdown, AppNavbarBrand, AppSidebarToggler } from '@coreui/react';
 import logo from '../../assets/img/brand/logo.svg'
 import sygnet from '../../assets/img/brand/sygnet.svg'
@@ -13,6 +13,7 @@ const propTypes = {
 const defaultProps = {};
 
 class DefaultHeader extends Component {
+ 
   render() {
 
     // eslint-disable-next-line
@@ -32,7 +33,7 @@ class DefaultHeader extends Component {
             <NavLink href="/">Dashboard</NavLink>
           </NavItem>
           <NavItem className="px-3">
-            <NavLink href="#/users">Users</NavLink>
+            <NavLink state={this.state} href="#/users">Users</NavLink>
           </NavItem>
           <NavItem className="px-3">
             <NavLink href="#">Settings</NavLink>
