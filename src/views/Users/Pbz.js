@@ -41,7 +41,7 @@ function UserRow(props) {
 
 
 
-class Users extends Component {
+class Pbz extends Component {
   constructor (props) {
     super(props);
     this.state = {
@@ -72,7 +72,8 @@ class Users extends Component {
 
     return (
       <div className="animated fadeIn">
-          
+       
+         
             <Card>
               <CardHeader>
                 <i className="fa fa-align-justify"></i>Blueberry Muffin Wasps vs Spicy Hot Ninjas <small className="text-muted">example</small>
@@ -104,9 +105,10 @@ class Users extends Component {
                 
               </CardBody>
             </Card>
-             </div>
+          
+      </div>
     )
   }
 }
 
-export default Users;
+export default Pbz;
