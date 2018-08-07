@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { Bar, Line } from 'react-chartjs-2';
-// import Users from './views/Users/Users';
+import Users from '../Users/Users';
 import {
   Badge,
   Button,
@@ -21,9 +20,7 @@ import {
   Row,
   Table,
 } from 'reactstrap';
-import Widget03 from '../../views/Widgets/Widget03'
-import { CustomTooltips } from '@coreui/coreui-plugin-chartjs-custom-tooltips';
-import { getStyle, hexToRgba } from '@coreui/coreui/dist/js/coreui-utilities'
+
 
 
 // Main Chart
@@ -76,7 +73,7 @@ class Dashboard extends Component {
 
     return (
       <div className="animated fadeIn">
-     
+        <Users />
         <Row>
           <Col>
             <Card>

@@ -74,6 +74,102 @@ class Users extends Component {
     return (
       <div className="animated fadeIn">
         <Row>
+        <Card>
+              <CardHeader className="text-center">
+                BlueBerry Muffin Wasps {' Vs '} PowerBAll Z Ninjas
+              </CardHeader>
+              <CardBody>
+                
+                    <hr className="mt-0" />
+                    <div className="progress-group mb-4">
+                      <div className="progress-group-prepend">
+                        <span className="progress-group-text">
+                          Monday
+                        </span>
+                      </div>
+                      <div className="progress-group-bars">
+                        <Progress className="progress-m" color="info" value="34" text="offense"/>
+                        <Progress className="progress-xs" color="danger" value="78" />
+                      </div>
+                    </div>
+                    <div className="progress-group mb-4">
+                      <div className="progress-group-prepend">
+                        <span className="progress-group-text">
+                        Tuesday
+                        </span>
+                      </div>
+                      <div className="progress-group-bars">
+                        <Progress className="progress-xs" color="info" value="56" />
+                        <Progress className="progress-xs" color="danger" value="94" />
+                      </div>
+                    </div>
+                    <div className="progress-group mb-4">
+                      <div className="progress-group-prepend">
+                        <span className="progress-group-text">
+                        Wednesday
+                        </span>
+                      </div>
+                      <div className="progress-group-bars">
+                        <Progress className="progress-xs" color="info" value="12" />
+                        <Progress className="progress-xs" color="danger" value="67" />
+                      </div>
+                    </div>
+                    <div className="progress-group mb-4">
+                      <div className="progress-group-prepend">
+                        <span className="progress-group-text">
+                        Thursday
+                        </span>
+                      </div>
+                      <div className="progress-group-bars">
+                        <Progress className="progress-xs" color="info" value="43" />
+                        <Progress className="progress-xs" color="danger" value="91" />
+                      </div>
+                    </div>
+                    <div className="progress-group mb-4">
+                      <div className="progress-group-prepend">
+                        <span className="progress-group-text">
+                        Friday
+                        </span>
+                      </div>
+                      <div className="progress-group-bars">
+                        <Progress className="progress-xs" color="info" value="22" />
+                        <Progress className="progress-xs" color="danger" value="73" />
+                      </div>
+                    </div>
+                    <div className="progress-group mb-4">
+                      <div className="progress-group-prepend">
+                        <span className="progress-group-text">
+                        Saturday
+                        </span>
+                      </div>
+                      <div className="progress-group-bars">
+                        <Progress className="progress-xs" color="info" value="53" />
+                        <Progress className="progress-xs" color="danger" value="82" />
+                      </div>
+                    </div>
+                    <div className="progress-group mb-4">
+                      <div className="progress-group-prepend">
+                        <span className="progress-group-text">
+                        Sunday
+                        </span>
+                      </div>
+                      <div className="progress-group-bars">
+                        <Progress className="progress-xs" color="info" value="9" />
+                        <Progress className="progress-xs" color="danger" value="69" />
+                      </div>
+                    </div>
+                    <div className="legend text-center">
+                      <small>
+                        <sup className="px-1"><Badge pill color="info">&nbsp;</Badge></sup>
+                        Offense
+                        &nbsp;
+                        <sup className="px-1"><Badge pill color="danger">&nbsp;</Badge></sup>
+                        Defense
+                      </small>
+                    </div>
+                  
+              </CardBody>
+            </Card>
           <Col xl={6}>
             <Card>
               <CardHeader>
