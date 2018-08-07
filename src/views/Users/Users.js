@@ -33,14 +33,13 @@ function UserRow(props) {
   return (
     
     <tr key={user.id.toString()}>
-        <th scope="row"><a href={userLink}>{user.cell}</a></th>
-        <td><a href={userLink}>{user.name.first}</a></td>
+        <th scope="row"><a href={userLink}>{user.name.first}</a></th>
+        <td><a href={userLink}>{user.name.last}</a></td>
         <td>{user.registered.age}</td>
         <td>{user.gender}</td>
         {/* <td><Badge href={userLink} color={getBadge(user.status)}>{user.status}</Badge></td> */}
-        
-        <Progress className="progress-m" color="info" value="34" text="offense"/>
-        <Progress className="progress-xs" color="danger" value="78" />
+        <Progress className="progress-s" color="info" value="34" text="offense"/>
+        <Progress className="progress-s" color="danger" value="78" />
     </tr>
     
   )
@@ -60,7 +59,7 @@ class Users extends Component {
     };
 
     getData (){
-      axios.get("https://randomuser.me/api/?gender=male&nat=uss&results=12")
+      axios.get("https://randomuser.me/api/?gender=male&nat=us&results=12")
       .then(response => {
         // this.setState({results: response.data.results}, (state) => {
           console.log(response)
@@ -182,14 +181,21 @@ class Users extends Component {
                 <i className="fa fa-align-justify"></i>Blueberry Muffin Wasps vs Spicy Hot Ninjas <small className="text-muted">example</small>
               </CardHeader>
               <CardBody>
+                <small className="float-right">
+                  <sup className="px-1"><Badge pill color="info">&nbsp;</Badge></sup>
+                    Offense
+                  &nbsp;
+                  <sup className="px-1"><Badge pill color="danger">&nbsp;</Badge></sup>
+                   Defense
+                </small>
                 <Table responsive hover>
                   <thead>
                     <tr>
-                      <th scope="col">Name:</th>
-                      <th scope="col">Position:</th>
+                      <th scope="col">First:</th>
+                      <th scope="col">Last:</th>
+                      <th scope="col">Postition:</th>
                       <th scope="col">Overall:</th>
-                      <th scope="col">Role:</th>
-                      <th scope="col">Country:</th>
+                      <th scope="col">Stats:</th>
                     </tr>
                   </thead>
                   <tbody>
