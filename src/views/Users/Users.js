@@ -31,15 +31,21 @@ function UserRow(props) {
   // }
 
   return (
+    
     <tr key={user.id.toString()}>
         <th scope="row"><a href={userLink}>{user.cell}</a></th>
         <td><a href={userLink}>{user.name.first}</a></td>
         <td>{user.registered.age}</td>
         <td>{user.gender}</td>
         {/* <td><Badge href={userLink} color={getBadge(user.status)}>{user.status}</Badge></td> */}
+        
+        <Progress className="progress-m" color="info" value="34" text="offense"/>
+        <Progress className="progress-xs" color="danger" value="78" />
     </tr>
+    
   )
 }
+
 
 
 class Users extends Component {
@@ -54,7 +60,7 @@ class Users extends Component {
     };
 
     getData (){
-      axios.get("https://randomuser.me/api/?gender=male&nat=uss&results=10")
+      axios.get("https://randomuser.me/api/?gender=male&nat=uss&results=12")
       .then(response => {
         // this.setState({results: response.data.results}, (state) => {
           console.log(response)
@@ -79,7 +85,15 @@ class Users extends Component {
                 BlueBerry Muffin Wasps {' Vs '} PowerBAll Z Ninjas
               </CardHeader>
               <CardBody>
-                
+              <div className="legend text-center">
+                      <small>
+                        <sup className="px-1"><Badge pill color="info">&nbsp;</Badge></sup>
+                        Offense
+                        &nbsp;
+                        <sup className="px-1"><Badge pill color="danger">&nbsp;</Badge></sup>
+                        Defense
+                      </small>
+                    </div>
                     <hr className="mt-0" />
                     <div className="progress-group mb-4">
                       <div className="progress-group-prepend">
@@ -158,15 +172,7 @@ class Users extends Component {
                         <Progress className="progress-xs" color="danger" value="69" />
                       </div>
                     </div>
-                    <div className="legend text-center">
-                      <small>
-                        <sup className="px-1"><Badge pill color="info">&nbsp;</Badge></sup>
-                        Offense
-                        &nbsp;
-                        <sup className="px-1"><Badge pill color="danger">&nbsp;</Badge></sup>
-                        Defense
-                      </small>
-                    </div>
+                    
                   
               </CardBody>
             </Card>
