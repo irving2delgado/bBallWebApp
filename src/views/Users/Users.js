@@ -77,17 +77,17 @@ class Users extends Component {
           <Col xl={6}>
             <Card>
               <CardHeader>
-                <i className="fa fa-align-justify"></i> Users <small className="text-muted">example</small>
+                <i className="fa fa-align-justify"></i>Blueberry Muffin Wasps vs Spicy Hot Ninjas <small className="text-muted">example</small>
               </CardHeader>
               <CardBody>
                 <Table responsive hover>
                   <thead>
                     <tr>
-                      <th scope="col">id</th>
-                      <th scope="col">name</th>
-                      <th scope="col">registered</th>
-                      <th scope="col">role</th>
-                      <th scope="col">status</th>
+                      <th scope="col">Name:</th>
+                      <th scope="col">Position:</th>
+                      <th scope="col">Overall:</th>
+                      <th scope="col">Role:</th>
+                      <th scope="col">Country:</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -100,7 +100,6 @@ class Users extends Component {
               </CardBody>
             </Card>
           </Col>
-          
         </Row>
       </div>
     )
