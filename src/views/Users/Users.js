@@ -71,11 +71,11 @@ class Users extends Component {
     // const userList = usersData.filter((user) => user.id < 19)
 
     return (
-      <div className="animated fadeIn">
+      <Col className="animated fadeIn">
           
-            <Card>
+            <Card body inverse color="info">
               <CardHeader>
-                <i className="fa fa-align-justify"></i>Blueberry Muffin Wasps vs Spicy Hot Ninjas <small className="text-muted">example</small>
+                <i className="fa fa-basketball"></i>Blueberry Muffin Wasps <small className="text-muted">Roster</small>
               </CardHeader>
               <CardBody>
                 <small className="float-right">
@@ -104,7 +104,7 @@ class Users extends Component {
                 
               </CardBody>
             </Card>
-             </div>
+             </Col>
     )
   }
 }

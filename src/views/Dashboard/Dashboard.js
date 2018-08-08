@@ -77,7 +77,7 @@ class Dashboard extends Component {
        
         <Row >
         <Users />
-        VS
+        <span style={{padding:'25px'}}>VS</span>
         <Pbz />
          
         </Row>
