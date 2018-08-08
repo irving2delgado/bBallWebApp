@@ -16,10 +16,17 @@ import {
 class UserRow extends Component {
   constructor(props) {
     super(props);
-
+    this.state ={
+        popoverOpen: false,
+    }
+    this.toggle = this.toggle.bind(this);
   }
 
-  
+  toggle() {
+    this.setState({
+      popoverOpen: !this.state.popoverOpen,
+    });
+  }
 
   render() {
       
@@ -29,25 +36,10 @@ class UserRow extends Component {
   const playerLast = user.name.last
 
     return (
-    //   <span>
-    //     <Button className="mr-1" color="secondary" id={'Popover-' + this.props.id} onClick={this.toggle}>
-    //       {this.props.item.text}
-    //     </Button>
-    //     <Popover placement={this.props.item.placement} isOpen={this.state.popoverOpen} target={'Popover-' + this.props.id} toggle={this.toggle}>
-    //       <PopoverHeader>Popover Title</PopoverHeader>
-    //       <PopoverBody>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</PopoverBody>
-    //     </Popover>
-    //   </span>
-     
-     
           <tr key={user.id.toString()}>
-            <td scope="row">
-                <Button 
-                style={{color:"inherit"}} 
-                id={'Popover-' + this.props.id} 
-                isOpen={this.props.popOpen}
-                onClick={this.props.togglePop}>
-                {playerName.charAt(0).toUpperCase() + playerName.substr(1)}</Button>
+            <td scope="row" tyle={{color:"inherit"}} 
+                id={'Popover-' + this.props.id} onClick={this.toggle}>
+                {playerName.charAt(0).toUpperCase() + playerName.substr(1)}
             </td>
             <td>
                 <a 
@@ -55,7 +47,7 @@ class UserRow extends Component {
                  onClick={this.props.toggle}>
                  {playerLast.charAt(0).toUpperCase() + playerLast.substr(1)}</a>
             </td>
-              <Popover placement="top" isOpen={this.props.popoverOpen} target={'Popover-' + this.props.id} >
+              <Popover placement="top" isOpen={this.state.popoverOpen} target={'Popover-' + this.props.id} >
                 <PopoverHeader>Popover Title</PopoverHeader>
                 <PopoverBody>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</PopoverBody>
                 </Popover>

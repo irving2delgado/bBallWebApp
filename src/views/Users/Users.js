@@ -106,7 +106,7 @@ class Users extends Component {
                   </thead>
                   <tbody>
                     {this.state.results.map((user, index) =>
-                      <UserRow key={index} user={user} id={index} popoverOpen={this.state.popoverOpen} togglePop={this.toggle} />
+                      <UserRow key={index} user={user} id={index} togglePop={()=> this.setState({popoverOpen: !this.state.popoverOpen})} />
                     )}
                   </tbody>
                 </Table>
