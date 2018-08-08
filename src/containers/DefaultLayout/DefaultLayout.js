@@ -4,18 +4,11 @@ import { Container } from 'reactstrap';
 
 import {
   AppAside,
-  AppBreadcrumb,
   AppFooter,
   AppHeader,
-  AppSidebar,
-  AppSidebarFooter,
-  AppSidebarForm,
-  AppSidebarHeader,
-  AppSidebarMinimizer,
-  AppSidebarNav,
+ 
 } from '@coreui/react';
 // sidebar nav config
-import navigation from '../../_nav';
 // routes config
 import routes from '../../routes';
 import DefaultAside from './DefaultAside';
@@ -30,15 +23,8 @@ class DefaultLayout extends Component {
           <DefaultHeader />
         </AppHeader>
         <div className="app-body">
-          {/* <AppSidebar fixed display="lg">
-            <AppSidebarHeader />
-            <AppSidebarForm />
-            <AppSidebarNav navConfig={navigation} {...this.props} />
-            <AppSidebarFooter />
-            <AppSidebarMinimizer />
-          </AppSidebar> */}
+         
           <main className="main">
-            <AppBreadcrumb appRoutes={routes}/>
             <Container fluid>
               <Switch>
                 {routes.map((route, idx) => {

@@ -1,16 +1,6 @@
 import React, { Component } from 'react';
-import { Button, Card, CardBody, CardHeader, Popover, PopoverBody, PopoverHeader } from 'reactstrap';
+import { Popover, PopoverBody, PopoverHeader } from 'reactstrap';
 import {
-   
-    ButtonDropdown,
-    ButtonGroup,
-    ButtonToolbar,
-    CardFooter,
-    CardTitle,
-    Dropdown,
-    DropdownItem,
-    DropdownMenu,
-    DropdownToggle,
     Progress,
   } from 'reactstrap';
 

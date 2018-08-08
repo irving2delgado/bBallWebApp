@@ -1,16 +1,6 @@
 import React, { Component } from 'react';
 import { Button, Card, CardBody, CardHeader, Popover, PopoverBody, PopoverHeader } from 'reactstrap';
 import {
-   
-    ButtonDropdown,
-    ButtonGroup,
-    ButtonToolbar,
-    CardFooter,
-    CardTitle,
-    Dropdown,
-    DropdownItem,
-    DropdownMenu,
-    DropdownToggle,
     Progress,
   } from 'reactstrap';
 
@@ -40,9 +30,6 @@ class UserPbz extends Component {
   const userLink = `#/users/${user.id}`
   const playerName = user.name.first
   const playerLast = user.name.last
-
-
-
 const shootingIn = this.getRandomInt(30,100);
 const shootingOut = this.getRandomInt(30,100);
 const handling = this.getRandomInt(30,100);
@@ -63,10 +50,6 @@ const divStyle = {
     margin: '10px',
     
   };
- 
-  
-
-
     return (
           <tr key={user.id.toString()}>
             <td scope="row" 
