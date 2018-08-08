@@ -27,8 +27,8 @@ function UserRow(props) {
   return (
     
     <tr key={user.id.toString()}>
-        <td scope="row"><a href={userLink}>{playerName.charAt(0).toUpperCase() + playerName.substr(1)}</a></td>
-        <td><a href={userLink}>{playerLast.charAt(0).toUpperCase() + playerLast.substr(1)}</a></td>
+        <td scope="row"><a style={{color:"inherit"}} href={userLink}>{playerName.charAt(0).toUpperCase() + playerName.substr(1)}</a></td>
+        <td><a style={{color:"inherit"}} href={userLink}>{playerLast.charAt(0).toUpperCase() + playerLast.substr(1)}</a></td>
         <td>{user.registered.age}</td>
         <td>{user.gender}</td>
         {/* <td><Badge href={userLink} color={getBadge(user.status)}>{user.status}</Badge></td> */}
