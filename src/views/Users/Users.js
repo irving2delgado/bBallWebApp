@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Badge, Card, CardBody, CardHeader, Col, Table } from 'reactstrap';
 import axios from 'axios';
-import UserRow from './UserRow'
+import UserRow from './UserRow';
 import {
   Button,
   ButtonDropdown,
@@ -59,7 +59,7 @@ class Users extends Component {
                       <th scope="col">Name:</th>
                      
                       <th scope="col">Age:</th>
-                      <th scope="col">Overall:</th>
+                      <th scope="col">Rating:</th>
                       <th scope="col">Stats:</th>
                     </tr>
                   </thead>

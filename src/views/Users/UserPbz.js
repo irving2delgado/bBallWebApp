@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, Card, CardBody, CardHeader, Popover, PopoverBody, PopoverHeader } from 'reactstrap';
+import {  Popover, PopoverBody, PopoverHeader } from 'reactstrap';
 import {
     Progress,
   } from 'reactstrap';
@@ -27,7 +27,6 @@ class UserPbz extends Component {
   render() {
       
   const user = this.props.user
-  const userLink = `#/users/${user.id}`
   const playerName = user.name.first
   const playerLast = user.name.last
 const shootingIn = this.getRandomInt(30,100);
@@ -40,7 +39,7 @@ const speed = this.getRandomInt(30,100);
 const vert = this.getRandomInt(30,100);
 const offense = (shootingIn + shootingOut + handling + passing) / 4;
 const defense = (steal + block + speed + vert) / 4;
-const overall = (offense + defense) / 2;
+const overall = Math.round((offense + defense) / 2);
 const age = this.getRandomInt(18, 40);
 
 

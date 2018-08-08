@@ -41,7 +41,7 @@ const speed = getRandomInt(30,100);
 const vert = getRandomInt(30,100);
 const offense = (shootingIn + shootingOut + handling + passing) / 4;
 const defense = (steal + block + speed + vert) / 4;
-const overall = (offense + defense) / 2;
+const overall = Math.round((offense + defense) / 2);
 const age = getRandomInt(18, 40);
 
 

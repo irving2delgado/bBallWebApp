@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import Users from '../Users/Users';
 import Pbz from '../Users/Pbz';
+import { AppNavbarBrand } from '@coreui/react';
+import logo from '../../assets/img/brand/logo.svg'
+import sygnet from '../../assets/img/brand/sygnet.svg'
+
 import {
   Row,
 } from 'reactstrap';
@@ -45,7 +49,15 @@ class Dashboard extends Component {
        
         <Row >
         <Users />
-        <span style={{padding:'25px'}}>VS</span>
+        <span style={{padding:'25px'}}>Powered <br />
+        <AppNavbarBrand
+          full={{ src: logo, width: 89, height: 25, alt: 'CoreUI Logo' }}/>
+          <br />
+          <br />
+          <strong style={{marginTop:"55px"}}> VS </strong> <br /> <br />
+          <small>* Click on Players to shuffle stats</small>
+         </span>
+         
         <Pbz />
          
         </Row>

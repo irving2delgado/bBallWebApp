@@ -60,7 +60,7 @@ class Pbz extends Component {
                       <th scope="col">Name:</th>
                      
                       <th scope="col">Age:</th>
-                      <th scope="col">Overall:</th>
+                      <th scope="col">Rating:</th>
                       <th scope="col">Stats:</th>
                     </tr>
                   </thead>
