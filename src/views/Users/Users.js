@@ -97,8 +97,8 @@ class Users extends Component {
                 <Table responsive hover>
                   <thead>
                     <tr>
-                      <th scope="col">First:</th>
-                      <th scope="col">Last:</th>
+                      <th scope="col">Name:</th>
+                     
                       <th scope="col">Postition:</th>
                       <th scope="col">Overall:</th>
                       <th scope="col">Stats:</th>
