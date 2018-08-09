@@ -4,9 +4,11 @@ import Pbz from '../Users/Pbz';
 import { AppNavbarBrand } from '@coreui/react';
 import logo from '../../assets/img/brand/logo.svg'
 import sygnet from '../../assets/img/brand/sygnet.svg'
+import lighthouse from '../../assets/img/lighthouse.png'
 
 import {
   Row,
+  Img
 } from 'reactstrap';
 
 
@@ -46,7 +48,11 @@ class Dashboard extends Component {
 
     return (
       <div className="animated fadeIn text-center">
-       
+        <Row>
+          Show lighthouse stats
+          Coming soon push notifications
+          <img src={lighthouse} />
+        </Row>
         <Row >
         <Users />
         <span style={{padding:'25px'}}>Powered <br />
